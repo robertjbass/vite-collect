@@ -13,9 +13,6 @@
 export default {
   name: "Main",
   data: () => ({ count: 0 })
-  // setup() {
-  //   console.log("Main.vue component is running");
-  // }
 };
 </script>
 
