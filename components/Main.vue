@@ -12,7 +12,10 @@
 <script>
 export default {
   name: "Main",
-  data: () => ({ count: 0 })
+  data: () => ({ count: 0 }),
+  setup() {
+    console.log("Main component is working");
+  }
 };
 </script>
 

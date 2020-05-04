@@ -1,17 +1,20 @@
 <template>
   <Main />
+  <BodyForm />
 </template>
 
 <script>
 import Main from "./components/Main.vue";
+import BodyForm from "./components/BodyForm.vue";
+
 export default {
   name: "App",
-  data: () => ({ foo: "bar" }),
   setup() {
     console.log("Vite App is running");
   },
   components: {
-    Main
+    Main,
+    BodyForm
   }
 };
 </script>

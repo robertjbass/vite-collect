@@ -23,3 +23,17 @@ git add . && git commit -m "initialCommit" && git push
 npm run dev
 tsc -w
 ```
+
+### Dev Server
+
+```
+npm run type
+npm run dev
+```
+
+### Build
+
+```
+npm run type
+npm run build
+```

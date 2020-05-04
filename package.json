@@ -2,13 +2,13 @@
   "name": "vite-collect",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite && tsc -w",
+    "dev": "vite",
+    "type": "tsc --watch",
     "build": "vite build"
   },
   "dependencies": {
     "firebase": "^7.14.2",
     "firebase-tools": "^8.2.0",
-    "sass": "^1.26.5",
     "vue": "^3.0.0-beta.4"
   },
   "devDependencies": {

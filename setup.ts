@@ -5,4 +5,5 @@ const { promises: fs } = require("fs");
 if (firebase) {
   console.log("firebase is found");
 }
-console.log("tests");
+
+console.log("TypeScript working as expected!");
