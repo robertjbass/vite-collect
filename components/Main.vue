@@ -1,6 +1,6 @@
 <template>
   <h1>This is my Vite Main Component</h1>
-  <h3>Vite + Vue 3!</h3>
+  <h3>Vite + Vue 3!!</h3>
   <p>
     <span>Count is: {{ count }}</span>
     <br />
