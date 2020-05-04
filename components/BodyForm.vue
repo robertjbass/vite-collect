@@ -43,7 +43,8 @@ p {
 }
 
 button {
-  background-color: #4fc08d;
+  color: #4fc08d;
+  background-color: #34495e;
   font-size: 20px;
   font-weight: bold;
 }
