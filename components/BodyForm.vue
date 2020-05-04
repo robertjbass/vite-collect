@@ -1,14 +1,16 @@
 <template>
   <h3>Notations</h3>
-  <!--form-->
-  <input id="note" v-model="note" placeholder="edit me"><br>{{note}}</input>
+  <input id="note" v-model="note" placeholder="edit me" />
+  <br />{{ note }}<br />
+  <p>Input Text</p>
+  <button v-on:click="note = 'addToArray'">Save</button>
+  <br /><br />
+  <p>Run Method</p>
+  <button v-on:click="note = addNotation()">Save</button>
+  <div v-for="notation in notations">
+    {{ notation }}
+  </div>
   <br />
-  <button v-on:click="note='addToArray'"> Save</button><br>{{note}}<br>
-  <button v-on:click="note=addNotation()">Save</button>
-  
- 
-  <div v-for="notation in notations">{{ notation }}<br /></div>
-  <!--/form-->
 </template>
 
 <script>
@@ -21,12 +23,13 @@ export default {
     };
   },
   methods: {
-    addNotation() {
-       note = "methodWorked"
-         return note
-      }
+    addNotation(note) {
+      let addToArray = note;
+      return (note = "Method Ran");
+      return addToArray;
     }
-}
+  }
+};
 </script>
 
 <style scoped>
