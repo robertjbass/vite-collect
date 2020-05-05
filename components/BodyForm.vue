@@ -1,14 +1,24 @@
 <template>
   <h3>Notations</h3>
-  <input id="note" v-model="note" placeholder="edit me" />
-  <br />{{ note }}<br />
-  <p>Input Text</p>
-  <button v-on:click="note = 'addToArray'">Save</button>
-  <br /><br />
-  <p>Run Method</p>
-  <button v-on:click="note = addNotation()">Save</button>
-  <div v-for="notation in notations">
-    {{ notation }}
+  <input v-model="note" placeholder="-" />
+  <p>updateArray()</p>
+  <button v-on:click="updateArray()">Save</button>
+  <br />
+  <br />
+  <p>addNotation()</p>
+  <button v-on:click="note = addNotation()">
+    Save
+  </button>
+  <div>
+    <div v-for="notation in notations">
+      {{ notation }}
+    </div>
+    <br /><br />
+    Variables:
+    <br /><br />
+    Notations: {{ notations }}
+    <br />
+    Note: {{ note }}
   </div>
   <br />
 </template>
@@ -18,15 +28,17 @@ export default {
   name: "BodyForm",
   data() {
     return {
-      note: "blankNote",
-      notations: ["1", "2", "3", "4", "5"]
+      notations: ["A", "B", "C"]
     };
   },
   methods: {
     addNotation(note) {
       let addToArray = note;
-      return (note = "Method Ran");
-      return addToArray;
+      note = notations;
+      return note;
+    },
+    updateArray(notations) {
+      console.log(notations);
     }
   }
 };
